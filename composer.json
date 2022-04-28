@@ -1,0 +1,18 @@
+{
+    "name": "student/tp-cp6-7_pokedex",
+    "description": "Pokedex",
+    "type": "project",
+    "require": {
+        "altorouter/altorouter": "2.0",
+        "symfony/var-dumper": "5.3"
+    },
+    "authors": [
+        {
+            "name": "LaitAh",
+            "email": "lea.clair34@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"Pokedex\\": "app/"}
+    }
+}

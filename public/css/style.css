@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #c14040;
+    font-family: 'Bree Serif', serif;
+    color: #efe3e3;
+    width: 85%;
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    background-color: #efe3e3;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    color: #c14040;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #efe3e3;
+}
+
+.return {
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    display: grid;
+}
+
+header a {
+    color: #c14040;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+header li {
+    margin:0 0.5rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+h2 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: #EFE3E3;
+    text-align: center;
+}
+
+.poke-element{
+    background-color: #982c2c;
+    border-radius: 30px;
+    color : #efe3e3;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.poke-element p {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.container {
+    text-align: center;
+}
+
+.pokemon-info {
+    background-color: #ab3838;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.stat {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stat-title {
+    display: inline-block;
+    width: 100px;
+    text-align: left;
+}
+
+progress {
+    height: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    line-height: 1.5;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    border: none;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+}
+
+.btn.types {
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 0.375rem;
+    padding: 0.75rem;
+}
+
+@media (min-width: 500px) {
+    .poke-container, .type-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+    }
+
+    .poke-element{
+        margin-bottom: 0;
+    }
+
+    .container {
+        display: flex;
+    }
+
+    .pokemon-info {
+        flex-grow: 2;
+        text-align: left;
+        margin-left: 1rem;
+    }
+
+    .buttons {
+        display: grid;
+        grid-gap: .5rem;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .btn.types {
+        display: block;
+        border-radius: 0.25rem;
+    }
+}
